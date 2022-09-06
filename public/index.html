@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Calendar</title>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="header-title" id="month-description"></div>
+            <div class="header-links">
+                <a href="#" onclick="showNewNote()">Nova agenda</a>
+                <a href="#" onclick="changeMonth(false)"><</a>
+                <a href="#" onclick="changeMonth(true)">></a>
+            </div>
+        </div>
+        <div class="calendar">
+            <input type="hidden" id="month" value="">
+            <input type="hidden" id="year" value="">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Segunda</td>
+                        <td>Terça</td>
+                        <td>Quarta</td>
+                        <td>Quinta</td>
+                        <td>Sexta</td>
+                        <td>Sabado</td>
+                    </tr>
+                </thead>
+                <tbody id="calendar-table">
+                </tbody>
+            </table>
+            <div class="list">
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal-fade" id="modal-fade">
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-display">
+                <div class="modal-header">
+                    <div class="modal-header-content">
+                        Inserir nova agenda
+                    </div>
+                    
+                    <div class="modal-header-close"><a href="#" onclick="hideNewNote()"><i class="fa fa-times"></i></a></div>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="text">Texto</label>
+                        <input type="text" id="text" name="text">
+                        <label for="date">Data</label>
+                        <input type="number" id="date" name="date" maxlength="31" minlength="0">
+                        <button type="submit">Salvar</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>            
+        </div>        
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="index.js"></script>

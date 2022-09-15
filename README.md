@@ -14,8 +14,8 @@
 
 ## Screenshots
 ![actual_page](./public/imgs/img-1.jpeg)
-![adding_event](./public/imgs/img-1.jpeg)
-![new_page](./public/imgs/img-1.jpeg)
+![adding_event](./public/imgs/img-2.jpeg)
+![new_page](./public/imgs/img-3.jpeg)
 
 ## Setup
 You have to run "npm start" to initialize the calendar, and on another terminal, run "npm run api", so the API can start.
